@@ -12,10 +12,12 @@ class Home extends Component {
     return (
       <div>
         <Header/>
-        <About/>
-        <Values/>
-        <Areas/>
-        <Contact/>
+          <div class="container">
+            <About/>
+            <Values/>
+            <Areas/>
+            <Contact/>
+          </div>
         <Footer/>
       </div>
     );
