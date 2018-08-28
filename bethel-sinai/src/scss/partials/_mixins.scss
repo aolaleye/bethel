@@ -1,0 +1,108 @@
+// background image properties 
+@mixin background-image-properties {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+// text-align 
+@mixin align-center {
+    text-align: center;
+}
+@mixin align-left {
+    text-align: left;
+}
+@mixin align-right {
+    text-align: right;
+}
+
+// width of page
+@mixin width-90 {
+    width: 90%;
+    margin: auto;
+}
+@mixin width-80 {
+    width: 80%;
+    margin: auto;
+}
+@mixin width-70 {
+    width: 70%;
+    margin: auto;
+}
+
+// letter-spacing
+@mixin letter-spacing {
+    letter-spacing: .9px;
+    line-height: 1.5em;
+}
+
+// flexbox
+@mixin flexbox-column {
+    display: flex;
+    flex-direction: column;
+}
+@mixin flexbox-row {
+    display: flex;
+    flex-direction: row;
+}
+
+// buttons
+@mixin button-white {
+    color: #18203d;
+    background-color: #fff;
+    border-radius: 4px;
+    border: none;
+    padding: 14px 30px;
+    letter-spacing: .4px;
+    font-family: $font-regular;
+    font-size: $font-small;
+    cursor: pointer;
+    transition: all .25s ease-in-out;
+    &:hover,
+    &:focus {
+        background-color: #18203d;
+        color: #fff;
+    }
+}
+@mixin button-blue {
+    color: #fff;
+    background-color: #0085d9;
+    border-radius: 4px;
+    border: none;
+    padding: 14px 30px;
+    letter-spacing: .4px;
+    font-family: $font-regular;
+    font-size: $font-small;
+    cursor: pointer;
+    transition: all .25s ease-in-out;
+    &:hover,
+    &:focus {
+        background-color: #18203d;
+    }
+}
+
+// media queries
+@mixin mobile-landscape {
+    @media (min-width: $mobile-landscape) {
+      @content;
+    }
+}
+@mixin tablet-portrait {
+    @media (min-width: $tablet-portrait) {
+      @content;
+    }
+}
+@mixin tablet-landscape {
+    @media (min-width: $tablet-landscape) {
+      @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: $desktop) {
+      @content;
+    }
+}
+@mixin large-desktop {
+    @media (min-width: $large-desktop) {
+      @content;
+    }
+}

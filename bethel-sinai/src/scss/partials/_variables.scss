@@ -1,0 +1,26 @@
+@import '../base/typography.scss';
+
+/*------------------
+Font Styles
+------------------*/
+
+/*------------------
+Images
+------------------*/
+// background-image
+$header-background: url("../assets/img/cross.jpg");
+
+
+/*------------------
+Media Queries
+------------------*/
+// mobile landscape
+$mobile-landscape: 576px;
+// tablet portrait
+$tablet-portrait: 760px;
+// tablet landscape
+$tablet-landscape: 992px;
+// desktop
+$desktop: 1200px;
+// large desktop
+$large-desktop: 1330px;

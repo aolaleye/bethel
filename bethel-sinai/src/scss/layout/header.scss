@@ -1,0 +1,88 @@
+@import '../partials/_variables.scss';
+@import '../partials/_mixins.scss';
+
+.header {
+    background-image: $header-background;
+    background-color: #055b99;
+    min-height: 335px;
+    @include background-image-properties;
+    background-position: 75% 20%; 
+    div {
+        @include align-center;
+        @include width-90;
+        padding: 45px 0 0 0;
+        img {
+            width: 10.3em;
+        }
+        h2 {
+            color: white;
+            font-family: $font-regular;
+            letter-spacing: .3px;
+            line-height: 2em;
+            margin: 60px 0 0 0;
+            font-size: 1.3em;
+        }
+    }
+}
+
+/* ----------------------------------
+ media queries for tablets and larger
+---------------------------------- */
+
+@media (min-width: 350px) {
+    .header {
+        div {
+            h2 {
+                font-size: 1.6em;
+            }
+        }
+    }
+}
+
+// title font increases and the cardinal logo is moved from the center to the top left corner of the header
+
+@include tablet-portrait {
+    .header {
+        min-height: 370px;
+        div {
+            @include align-left;
+            padding: 30px 0 0 0;
+            img {
+                width: 7em;
+            }
+            h2 {
+                @include align-center;
+                @include width-80;
+                line-height: 1.5em;
+                margin: 60px auto 0 auto;
+                font-size: 2.5em;
+            }
+        }
+    }
+}
+
+@include tablet-landscape {
+    .header {
+        min-height: 380px;
+        div {
+            h2 {
+                width: 70%;
+                font-size: 2.9em;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
+
+@include desktop {
+    .header {
+        min-height: 410px;
+        div {
+            h2 {
+                width: 65%;
+                font-size: 3.3em;
+                margin: 75px auto 0 auto;
+            }
+        }
+    }
+}
