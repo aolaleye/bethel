@@ -1,0 +1,29 @@
+.header {
+    background: linear-gradient(rgba(100, 146, 204, 0.7),
+                rgba(100, 146, 204, 0.8) 100%),
+                #6492cc $header-background;
+    @include background-image-properties;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    .header-container {
+        color: white;
+        padding: 0 10px;
+        @include align-center;
+        align-self: center;
+        h1 {
+            margin: 0 auto;
+            font-family: $IM-Fell;
+            text-shadow: 3px 3px 8px #222;
+            font-size: 1.8em;
+        }
+        h4 {
+            font-family: $Libre;
+            font-style: italic;
+            font-size: .85em;
+            background: linear-gradient(160deg, rgba(230, 230, 230, 0.3) 0%, rgba(255,255,255,.1) 80%);
+            padding: 4px 8px;
+        }
+
+    }
+}

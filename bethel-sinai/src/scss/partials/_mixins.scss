@@ -45,41 +45,6 @@
     flex-direction: row;
 }
 
-// buttons
-@mixin button-white {
-    color: #18203d;
-    background-color: #fff;
-    border-radius: 4px;
-    border: none;
-    padding: 14px 30px;
-    letter-spacing: .4px;
-    font-family: $font-regular;
-    font-size: $font-small;
-    cursor: pointer;
-    transition: all .25s ease-in-out;
-    &:hover,
-    &:focus {
-        background-color: #18203d;
-        color: #fff;
-    }
-}
-@mixin button-blue {
-    color: #fff;
-    background-color: #0085d9;
-    border-radius: 4px;
-    border: none;
-    padding: 14px 30px;
-    letter-spacing: .4px;
-    font-family: $font-regular;
-    font-size: $font-small;
-    cursor: pointer;
-    transition: all .25s ease-in-out;
-    &:hover,
-    &:focus {
-        background-color: #18203d;
-    }
-}
-
 // media queries
 @mixin mobile-landscape {
     @media (min-width: $mobile-landscape) {
