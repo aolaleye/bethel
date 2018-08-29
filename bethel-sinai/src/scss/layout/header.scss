@@ -1,3 +1,6 @@
+@import '../partials/_variables.scss';
+@import '../partials/_mixins.scss';
+
 .header {
     background: linear-gradient(rgba(100, 146, 204, 0.7),
                 rgba(100, 146, 204, 0.8) 100%),
