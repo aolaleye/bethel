@@ -24,7 +24,7 @@ const Values = () => (
               <li>Fulfillment</li>
               <li>Fruitfulness</li>
             </ul>
-            <img src={diagram} alt="Freedom, Fullness, Fulfillment and Fruitfulness"/>
+            <img src={diagram} alt="Freedom: Power to act, Power to change. Fullness: Abundance, Completeness. Fulfillment: Satisfaction, Acheivement. Fruitfulness: Profitable, Beneficial"/>
         </div>
 
     </div>
